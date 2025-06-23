@@ -1,0 +1,111 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #110844;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Layout */
+body {
+  background-color: #CEE5F2;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px; /* pushes content down a bit */
+}
+
+/* Main Card Container */
+.mainFrame {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  margin: 15px;
+  font-size: 3rem;
+  transition: font-size 0.3s ease-in-out;
+}
+
+h1:hover {
+  font-size: 3.3rem;
+}
+
+/* Input and Button Group */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+.searchBox .searchBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #4b7bec;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBox .searchBtn:hover {
+  background-color: #3867d6;
+}
+
+/* Text Output Styling */
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Image Styling */
+img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Media Responsiveness */
+@media (max-width: 480px) {
+  .mainFrame {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .searchBox {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .searchBox input,
+  .searchBox .searchBtn {
+    width: 100%;
+  }
+}

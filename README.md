@@ -77,4 +77,5 @@ wordify/
 
 ## 🙋‍♀️ Author
 
+### 📅 Date Completed: June 20, 2025
 Made with ❤️ by [@erleen0307](https://github.com/erleen0307)
